@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#10141d">
+<title>AYDOĞMUŞ 3D PRINTER | Hayalini Baskıya Dönüştür</title>
+<style>
+:root{--bg:#0b0e14;--panel:#121824;--line:#263247;--text:#f4f7fb;--muted:#aab5c7;--blue:#4ea1ff;--cyan:#68e0df}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:5;background:#0b0e14eF;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}.nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0;gap:18px}.brand{font-weight:900;letter-spacing:.06em;line-height:1.15}.brand small{display:block;color:var(--blue);font-size:.68rem;letter-spacing:.2em;margin-top:5px}.navlinks{display:flex;gap:22px;color:var(--muted);font-size:.93rem}.navlinks a:hover{color:white}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:12px;background:linear-gradient(120deg,var(--blue),var(--cyan));color:#06111d;font-weight:800;border:0;cursor:pointer}.btn.ghost{background:transparent;color:var(--text);border:1px solid var(--line)}
+.hero{padding:78px 0 62px;display:grid;grid-template-columns:1.05fr .95fr;gap:45px;align-items:center}.eyebrow{color:var(--cyan);font-weight:800;letter-spacing:.16em;text-transform:uppercase;font-size:.78rem}h1{font-size:clamp(2.6rem,6vw,4.8rem);line-height:1.03;letter-spacing:-.05em;margin:16px 0}h1 span{color:var(--blue)}.lead{color:var(--muted);font-size:1.1rem;max-width:570px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.hero-art{min-height:340px;border:1px solid var(--line);border-radius:28px;background:radial-gradient(circle at 50% 35%,#21466b 0,#121a28 42%,#0c111a 75%);display:grid;place-items:center;position:relative;overflow:hidden}.cube{width:190px;height:190px;position:relative;transform:rotate(-25deg) skewY(8deg);filter:drop-shadow(0 25px 25px #0008)}.cube div{position:absolute;border:2px solid #8bd6ff;background:linear-gradient(135deg,#3c8cd4aa,#1b3a62cc)}.cube .top{width:140px;height:140px;left:25px;top:0;transform:rotate(45deg) scaleY(.58)}.cube .left{width:100px;height:140px;left:0;top:70px;transform:skewY(32deg)}.cube .right{width:100px;height:140px;right:0;top:70px;transform:skewY(-32deg);background:linear-gradient(135deg,#4ea1ff99,#12304e)}.art-label{position:absolute;bottom:20px;left:22px;color:#d5e9ff;font-weight:700;letter-spacing:.12em;font-size:.75rem}.section{padding:54px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:24px}.section h2{font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.1;margin:8px 0}.sub{color:var(--muted);margin:0}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.category,.product{border:1px solid var(--line);background:var(--panel);border-radius:18px;overflow:hidden;transition:.2s}.category:hover,.product:hover{transform:translateY(-4px);border-color:#477cb5}.category-visual{height:150px;display:grid;place-items:center;background:linear-gradient(140deg,#1c2d45,#111722);font-size:3.4rem}.category h3{font-size:1rem;margin:12px 15px 16px}.product-visual{height:175px;display:grid;place-items:center;background:radial-gradient(circle,#223a58,#111722);font-size:3.6rem}.product-info{padding:15px}.product-info h3{margin:0 0 5px;font-size:1rem}.product-info p{margin:0;color:var(--muted);font-size:.9rem}.price{margin:12px 0;font-weight:800;color:var(--cyan)}.product .btn{width:100%;padding:10px}.custom{border:1px solid #2d5479;border-radius:24px;padding:30px;background:linear-gradient(115deg,#132338,#10151f);display:grid;grid-template-columns:1fr auto;align-items:center;gap:20px}.custom p{color:var(--muted);max-width:650px}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px}.step{padding:18px;border:1px solid var(--line);border-radius:16px;background:#10151e}.step b{color:var(--cyan);font-size:1.2rem}.step h3{margin:6px 0}.step p{color:var(--muted);margin:0;font-size:.92rem}footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);margin-top:45px}.footer-row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.notice{font-size:.78rem;color:#7f8ba0;margin-top:8px}
+.cart{position:fixed;right:18px;bottom:18px;background:var(--blue);color:#07111d;padding:13px 17px;border-radius:999px;font-weight:900;box-shadow:0 10px 35px #0008;z-index:6}
+@media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:48px}.hero-art{min-height:270px}.grid{grid-template-columns:repeat(2,1fr)}.navlinks{display:none}.custom{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.section-head{display:block}.section-head .sub{margin-top:8px}}
+@media(max-width:420px){.grid{gap:10px}.category-visual{height:120px}.product-visual{height:135px}.product-info{padding:11px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#top">AYDOĞMUŞ<small>3D PRINTER</small></a>
+<nav class="navlinks"><a href="#kategoriler">Kategoriler</a><a href="#urunler">Ürünler</a><a href="#ozel-baski">Özel Baskı</a></nav>
+<a class="btn" href="#ozel-baski">Baskı Talebi</a>
+</div></header>
+<main id="top">
+<section class="wrap hero">
+<div><div class="eyebrow">Tasarımdan gerçeğe</div><h1>Hayalini <span>baskıya</span> dönüştür.</h1><p class="lead">Dekoratif tasarımlar, kişiye özel isimlikler ve günlük hayatına dokunan 3D baskı ürünleri. Fikrini gönder, birlikte üretelim.</p><div class="actions"><a class="btn" href="#urunler">Ürünleri keşfet</a><a class="btn ghost" href="#ozel-baski">Özel üretim iste</a></div></div>
+<div class="hero-art" aria-label="3D baskı temalı görsel"><div class="cube"><div class="top"></div><div class="left"></div><div class="right"></div></div><div class="art-label">LAYER BY LAYER · MADE WITH CARE</div></div>
+</section>
+<section class="wrap section" id="kategoriler"><div class="section-head"><div><div class="eyebrow">Koleksiyonlar</div><h2>Ürün kategorileri</h2></div><p class="sub">Kendine veya sevdiklerine özel bir parça keşfet.</p></div>
+<div class="grid">
+<a class="category" href="#urunler"><div class="category-visual">🏠</div><h3>Dekoratif Ürünler</h3></a>
+<a class="category" href="#urunler"><div class="category-visual">🔑</div><h3>İsimlik & Anahtarlık</h3></a>
+<a class="category" href="#urunler"><div class="category-visual">🎮</div><h3>Oyuncu & Masaüstü</h3></a>
+<a class="category" href="#urunler"><div class="category-visual">🏍️</div><h3>Oto & Moto Aksesuarları</h3></a>
+</div></section>
+<section class="wrap section" id="urunler"><div class="section-head"><div><div class="eyebrow">Öne çıkanlar</div><h2>Ürün fikirleri</h2></div><p class="sub">Bu örnekleri kendi ürün fotoğrafların ve fiyatlarınla güncelleyebilirsin.</p></div>
+<div class="grid">
+<article class="product"><div class="product-visual">🪴</div><div class="product-info"><h3>Modern Mini Saksı</h3><p>Minimal masa ve raf dekorasyonu.</p><div class="price">Fiyatı sorunuz</div><button class="btn" onclick="addToCart('Modern Mini Saksı')">Sepete ekle</button></div></article>
+<article class="product"><div class="product-visual">🔤</div><div class="product-info"><h3>Kişiye Özel İsimlik</h3><p>İsme ve renge göre hazırlanır.</p><div class="price">Fiyatı sorunuz</div><button class="btn" onclick="addToCart('Kişiye Özel İsimlik')">Sepete ekle</button></div></article>
+<article class="product"><div class="product-visual">🎧</div><div class="product-info"><h3>Kulaklık Standı</h3><p>Oyuncu masasına düzen katar.</p><div class="price">Fiyatı sorunuz</div><button class="btn" onclick="addToCart('Kulaklık Standı')">Sepete ekle</button></div></article>
+<article class="product"><div class="product-visual">🧩</div><div class="product-info"><h3>Özel Tasarım Parça</h3><p>Ölçüne ve ihtiyacına göre üretim.</p><div class="price">Teklif al</div><button class="btn" onclick="addToCart('Özel Tasarım Parça')">Sepete ekle</button></div></article>
+</div><p class="notice">Ürün görselleri ve fiyatlar örnek amaçlıdır. Gerçek ürün ve stok bilgileri eklenmeden satışa hazır değildir.</p></section>
+<section class="wrap section" id="ozel-baski"><div class="custom"><div><div class="eyebrow">Kendi fikrin, kendi ürünün</div><h2>Özel 3D baskı siparişi</h2><p>Bir STL dosyan mı var? İsim, ölçü veya renk tercihin mi var? Tasarımını ve istediğin detayları ilet; üretim için değerlendirelim.</p></div><a class="btn" href="mailto:">E-posta ile teklif iste</a></div>
+<div class="steps"><div class="step"><b>01</b><h3>Fikrini paylaş</h3><p>Ürününü, ölçülerini veya model dosyanı hazırla.</p></div><div class="step"><b>02</b><h3>Teklifini al</h3><p>Malzeme, süre ve fiyat bilgisi netleştirilir.</p></div><div class="step"><b>03</b><h3>Üretime geçelim</h3><p>Onayından sonra baskı ve teslimat süreci başlar.</p></div></div>
+</section>
+</main>
+<footer><div class="wrap footer-row"><div><strong>AYDOĞMUŞ 3D PRINTER</strong><div>Fikirlerini katman katman gerçeğe dönüştür.</div></div><div>© <span id="year"></span> Aydoğmuş 3D Printer</div></div></footer>
+<button class="cart" id="cart" onclick="showCart()">Sepet (0)</button>
+<script>
+let cart=[];function addToCart(name){cart.push(name);document.getElementById('cart').textContent='Sepet ('+cart.length+')';}
+function showCart(){if(!cart.length){alert('Sepetin şu an boş.');return;}alert('Sepetindeki ürünler:\\n• '+cart.join('\\n• ')+'\\n\\nSipariş ve fiyat bilgisi için iletişim bilgilerini siteye eklemelisin.');}
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
